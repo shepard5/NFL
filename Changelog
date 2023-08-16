@@ -1,0 +1,2 @@
+8/15
+Found data pipeline (ESPN hidden API) provides ats information in real time as well as matchup information and scores. Need to combine all functions into a single functions.py file for ease of use. Need to incorporate other predictor variables into the model and perform some kind of regression analysis to review performance retrofitting historical data and verifying predictability.

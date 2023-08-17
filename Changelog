@@ -4,3 +4,6 @@ Found data pipeline (ESPN hidden API) provides ats information in real time as w
 8/16
 Produced a script that generates QBR for individual teams - need to be able to run for all teams at once and output to excel sheet
 Later today will do an assessment of which tasks need to be prioritized. 
+
+8/17
+Trying to figure out how to get the dataset formatted well. Filling zeros for teams with byes and NFC AFC. Removing repeated values if a 2 qbs play for one week

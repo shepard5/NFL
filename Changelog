@@ -7,3 +7,4 @@ Later today will do an assessment of which tasks need to be prioritized.
 
 8/17
 Trying to figure out how to get the dataset formatted well. Filling zeros for teams with byes and NFC AFC. Removing repeated values if a 2 qbs play for one week
+Combined functions into one py script to export all data to an excel sheet

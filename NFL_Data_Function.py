@@ -20,9 +20,11 @@ def NFL_Data():
 
             if week_recent["spreadWinner"] == week_2nd_recent["spreadWinner"]: 
                 if week_recent["spreadWinner"] == True:
-                    prospect = 'hot'
-                else:
-                    prospect = 'cold'
+                    prospect = 1
+                elif week_recent["spreadWinner"] == False:
+                    prospect = -1
+            else:
+                prospect = 0 
             
             dict_ats[x] = prospect
     

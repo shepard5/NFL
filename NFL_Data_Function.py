@@ -8,6 +8,7 @@ def NFL_Data():
     
     dict_ats = {i:0 for i in range (1,35)} 
 
+    #Identifying most recent two weeks and pulling game data
     for x in range(1, 35):
         team_url = f'https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/teams/{x}/odds/1002/past-performances?limit=300'
         response = requests.get(team_url)

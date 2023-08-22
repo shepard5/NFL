@@ -1,9 +1,9 @@
 import pandas as pd
 import requests
 import openpyxl
-from Defensive_stats_gen import *
-from NFL_offensive_stats_gen import *
-from Misc_stat_generator import *
+from Def_stat_gen import *
+from Off_stat_gen import *
+from Misc_stat_gen import *
 
 def combined_stats():
     offense_stats = offensive_team_stats()

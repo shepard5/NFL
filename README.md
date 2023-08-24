@@ -11,3 +11,6 @@ I ran a quick linear regression in R for QB heavy and QB light teams with the te
 
 ![Capture](https://github.com/shepard5/NFL/assets/108085853/c1721095-68b1-42e9-88bc-9459e8ee0471)
 ![Capture_light](https://github.com/shepard5/NFL/assets/108085853/935b3811-8490-44df-9321-9b2547e33b71)
+
+#
+Introducing logistic regression model to predict over/under and moneyline outcomes. Teams will be selected based on predictability - If a team's roster has changed heavily since last season, will have to wait until data comes out from the first few weeks to make decisions. Need to make a detailed list of teams whose rosters are highly similar and differnet compared to the 2022 season; factors to consider - young players improving, older players depreciating, coaching changes for struggling teams, qb changes, maybe consider changes that have been overcompensated (Falcons - Bijon Robinson, Desmond Ridder ?). Teams with high predictability will be selected for specialized model development. Will then look for identical matchups (or close to) present in both 2022 and 2023 between teams with high (and possibly low predictability) and run regression using 2022 season data. 

@@ -7,7 +7,7 @@ I suggest you refer to the TeamID excel sheet to link NFL teams with their corre
 #
 Developing models for individual teams rather than using all available data to summarize into one singular model will improve predictability game outcomes. For example, QB-centric teams (KC, BAL, Bills, Rams) will find that QBR is a better predictor variable than teams with a more homogeneous offense (49ers, Patriots, Steelers, Titans). 
 
-I ran a quick linear regression in R for QB-centric (QB heavy) and QB-non-centric (QB light) teams with the teams I just listed plus a few more. I also balanced it with defensive metrics (season interceptions and sacks) so that we aren't getting hit by too many invisible variables. While it is a small sample size, the results support our intuition. 
+I ran a quick linear regression in R for QB-centric (QB heavy) (BUF,NYJ,CIN,BAL,JAX,KC,DEN,PHI,CHI,ARI) and QB-non-centric (QB light) (MIA,NE,CLE,PIT,HOU,TEN,LV,WSH,DET,SEA,49ers) teams. I also balanced it with sacks to account for variations on defensive performances. While it is a small sample size, the results support our intuition. 
 
 
 ![Screen Shot 2023-08-24 at 9 40 55 PM](https://github.com/shepard5/NFL/assets/108085853/884cc169-580f-4c4e-8da4-95a0c6e5c491)

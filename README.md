@@ -9,7 +9,8 @@ Developing models for individual teams rather than using all available data to s
 
 I ran a quick linear regression in R for QB-centric (QB heavy) and QB-non-centric (QB light) teams with the teams I just listed plus a few more. I also balanced it with defensive metrics (season interceptions and sacks) so that we aren't getting hit by too many invisible variables. While it is a small sample size, the results support our intuition. 
 
-<img width="861" alt="Screen Shot 2023-08-24 at 9 40 55 PM" src="https://github.com/shepard5/NFL/assets/108085853/e2f0abde-5ecc-4215-bd61-e07065240caf">
+![Screen Shot 2023-08-24 at 9 40 55 PM](https://github.com/shepard5/NFL/assets/108085853/bd41d251-f0af-4b8d-98c0-a020b10e724a)
+
 
 #
 Introducing logistic regression model to predict over/under and moneyline outcomes. Teams will be selected based on predictability - If a team's roster has changed heavily since last season, will have to wait until data comes out from the first few weeks to make decisions. Need to make a detailed list of teams whose rosters are highly similar or differnet compared to the 2022 season; factors to consider - young players improving, older players depreciating, coaching changes for struggling teams, qb changes, maybe consider changes that have been overcompensated (Falcons - Bijon Robinson, Desmond Ridder ?). Teams with high predictability will be selected for specialized model development. Will then look for identical matchups (or close to) present in both 2022 and 2023 between teams with high (and possibly low predictability) and run regression using 2022 season data. 

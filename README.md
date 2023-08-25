@@ -9,7 +9,10 @@ Developing models for individual teams rather than using all available data to s
 
 I ran a quick linear regression in R for QB-centric (QB heavy) and QB-non-centric (QB light) teams with the teams I just listed plus a few more. I also balanced it with defensive metrics (season interceptions and sacks) so that we aren't getting hit by too many invisible variables. While it is a small sample size, the results support our intuition. 
 
-![Screen Shot 2023-08-24 at 9 40 55 PM](https://github.com/shepard5/NFL/assets/108085853/bd41d251-f0af-4b8d-98c0-a020b10e724a)
+
+![Screen Shot 2023-08-24 at 9 40 55 PM](https://github.com/shepard5/NFL/assets/108085853/884cc169-580f-4c4e-8da4-95a0c6e5c491)
+
+
 
 
 #

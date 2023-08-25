@@ -58,6 +58,29 @@ model_2021<-lm(Wins2021~data2021$`ESPN Quarterback Rating`+data2021$Sacks)
 model_2019<-lm(Wins2019~data2019$`ESPN Quarterback Rating`+data2019$Sacks)
 model_2018<-lm(Wins2018~data2018$`ESPN Quarterback Rating`+data2018$Sacks)
 
+#QB Heavy All 4 Years
+
+#For regression, try to have similar win totals for qb heavy and qb light
+
+QB_Light_IDs<-c(17,23,10,13,28,8,25,32,5,26)
+QB_Heavy_IDs<-c(2,4,30,12,21,3,22,31,7,15,6,7)
+
+QB_Light_Wins<-Wins_2022_df$`0`[QB_Light_IDs] #Avg 8.5 Wins per team
+QB_Heavy_Wins<-Wins_2022_df$`0`[QB_Heavy_IDs] #Avg 9.33 Wins per team
+
+qb_light_model<-lm(QB_Light_Wins~data2022$`Quarterback Rating`[QB_Light_IDs]+data2022$Sacks[QB_Light_IDs])
+qb_heavy_model<-lm(QB_Heavy_Wins~data2022$`Quarterback Rating`[QB_Heavy_IDs]+data2022$Sacks[QB_Heavy_IDs])
+
+summary(qb_light_model)
+summary(qb_heavy_model)
+
+
+#Running model using Miami Dolphins Data - Using ESPN Quarterback Rating, Expected total wins is 10.68 assuming all 
+#2022 conditions remains the same. Using Quarterback Rating, 10.38. Might have to look into Miami - looking like they
+#could break 9.5 wins.
+
+
+
 
 summary(model_2022)
 summary(model_2021)

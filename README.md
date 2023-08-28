@@ -10,9 +10,7 @@ Developing models for individual teams rather than using all available data to s
 I ran a quick linear regression in R for QB-centric (QB heavy) (BUF,NYJ,CIN,BAL,JAX,KC,DEN,PHI,CHI,ARI) and QB-non-centric (QB light) (NE,CLE,PIT,HOU,TEN,LV,WSH,DET,SEA,49ers) teams. I also balanced it with sacks to account for variations on defensive performances. While it is a small sample size, the results support our intuition. 
 
 
-![Screen Shot 2023-08-24 at 9 40 55 PM](https://github.com/shepard5/NFL/assets/108085853/884cc169-580f-4c4e-8da4-95a0c6e5c491)
-
-
+![Inkednflregressionpic](https://github.com/shepard5/NFL/assets/108085853/dce8d5f4-d47c-49f2-bf61-e0a0b4cebda6)
 
 
 #

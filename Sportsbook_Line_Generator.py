@@ -6,7 +6,7 @@ def Get_Weekly_Matchups(year,week):
     url_1 = "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/" + f"{year}" + "/types/2/weeks/" + f"{week}" + "/events?lang=en%C2%AEion=us"
     response = r.get(url_1)
     matchups = response.json()
-    dict_schedules = {}
+    dict_all_odds = {}
     dict_spreads = {}
     dict_over_under = {}
     dict_moneyline = {}
@@ -14,14 +14,14 @@ def Get_Weekly_Matchups(year,week):
         print(x)
         #Matchup Details Request
     
-        url = matchups["items"][x]["$ref"]
+        url_2 = matchups["items"][x]["$ref"]
 
-        matchup_response = r.get(url)
+        matchup_response = r.get(url_2)
         ind_matchup = matchup_response.json()
         matchup_id = ind_matchup["id"]
         matchup_name = ind_matchup["shortName"]
-        if matchup_name not in dict_schedules:
-            dict_schedules[matchup_name] = {}
+        if matchup_name not in dict_all_odds:
+            dict_all_odds[matchup_name] = {}
             
         #Odds Request
 
@@ -41,17 +41,17 @@ def Get_Weekly_Matchups(year,week):
         ]
 
         #Initialize dictionary containing all stats
-        dict_schedules[matchup_name]["Spreads"] = spreads
-        dict_schedules[matchup_name]["MoneyLine"] = moneyline
-        dict_schedules[matchup_name]["OverUnder"] = over_under
+        dict_all_odds[matchup_name]["Spreads"] = spreads
+        dict_all_odds[matchup_name]["MoneyLine"] = moneyline
+        dict_all_odds[matchup_name]["OverUnder"] = over_under
 
-    for item in dict_schedules:
+    for item in dict_all_odds:
             
-        dict_spreads[item] = dict_schedules[item]["Spreads"]
-        dict_over_under[item] = dict_schedules[item]["OverUnder"]
-        dict_moneyline[item] = dict_schedules[item]["MoneyLine"]
+        dict_spreads[item] = dict_all_odds[item]["Spreads"]
+        dict_over_under[item] = dict_all_odds[item]["OverUnder"]
+        dict_moneyline[item] = dict_all_odds[item]["MoneyLine"]
         
-    df = pd.DataFrame.from_dict(dict_schedules, orient='index')
+    df = pd.DataFrame.from_dict(dict_all_odds, orient='index')
     df_transposed = df.transpose()
     df.to_excel('weekly_odds.xlsx', engine='openpyxl')
 

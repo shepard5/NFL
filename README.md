@@ -1,4 +1,4 @@
-# Shepard5 NFL Model
+# Shepard5 NFL Model MAT 525 (Continued)
 The goal of this repo is to identify favorable week to week nfl spreads, win/loss, over/under lines such that in the long term a sportsbettor will return a positive rate of return.
 The repo consists primarily of data collection modules along with R scripts that tinker data extracted from the python functions. 
 I suggest you refer to the TeamID excel sheet to link NFL teams with their corresponding indices in the automatically generated excel sheets.

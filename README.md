@@ -1,7 +1,7 @@
 # Shepard5 NFL Model MAT 525 (Continued)
-The goal of this repo is to identify favorable week to week nfl spreads, win/loss, over/under lines such that in the long term a sportsbettor will return a positive rate of return.
-The repo consists primarily of data collection modules along with R scripts that tinker data extracted from the python functions. 
-I suggest you refer to the TeamID excel sheet to link NFL teams with their corresponding indices in the automatically generated excel sheets.
+The goal of this project is to sufficiently predict all NFL teams' season win totals with sufficient accuracy.
+
+As of 2021, sportsbooks' preseason lines have an MSE of 2.6 when compared to actual season results. The goal of this project is to produce an MSE that is confidently under the 2.6 benchmark for future seasons. 
 
 
 #
@@ -22,6 +22,6 @@ I encourage you to take a look at my other projects, particularly my project bui
 
 
 
-Neural Network Predictions vs Actual:
+Neural Network Predictions vs Actual (Average MSE ~ 8.5):
 
 ![Capture](https://github.com/shepard5/NFL/assets/108085853/42d88026-9660-43f2-b520-b42a072eff75)

@@ -12,10 +12,10 @@ I ran a quick linear regression in R for QB-centric (QB heavy) (BUF,NYJ,CIN,BAL,
 
 ![Inkednflregressionpic](https://github.com/shepard5/NFL/assets/108085853/dce8d5f4-d47c-49f2-bf61-e0a0b4cebda6)
 
+#
+Granted, this regression is optimized for this dataset, and may not fit other season data well.
 
 #
-Introducing logistic regression model to predict over/under and moneyline outcomes. Teams will be selected based on predictability - If a team's roster has changed heavily since last season, will have to wait until data comes out from the first few weeks to make decisions. Need to make a detailed list of teams whose rosters are highly similar or differnet compared to the 2022 season; factors to consider - young players improving, older players depreciating, coaching changes for struggling teams, qb changes, maybe consider changes that have been overcompensated (Falcons - Bijon Robinson, Desmond Ridder ?). Teams with high predictability will be selected for specialized model development. Will then look for identical matchups (or close to) present in both 2022 and 2023 between teams with high (and possibly low predictability) and run regression using 2022 season data. 
-
 While linear regression may be good at estimating team outcomes and eliminating human bias, football is a very complex sport where several unexpected variables may alter a team's win totals over the course of 18 weeks (trades, injuries, rookie variability, etc). Delving deeper into the data and exploring the near-endless landscape of potentially predictable variables would surely reveal easter eggs, but mastering other modeling techniques and building a model on theory would serve better for the sport of football.
 
 I encourage you to take a look at my other projects, particularly my project building horse racing models where I plan on exploring other model building techniques. 

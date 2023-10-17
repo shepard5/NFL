@@ -25,3 +25,7 @@ I encourage you to take a look at my other projects, particularly my project bui
 Neural Network Predictions vs Actual (Average MSE ~ 8.5):
 
 ![Capture](https://github.com/shepard5/NFL/assets/108085853/42d88026-9660-43f2-b520-b42a072eff75)
+
+https://rpubs.com/Timboslice003/991908
+
+Timmy Hernandez does a great job addressing the goals and approach to building such a model. For this particular variable, the main concern is minimizing MSE.

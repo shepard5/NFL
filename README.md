@@ -21,4 +21,5 @@ While linear regression may be good at estimating team outcomes and eliminating 
 I encourage you to take a look at my other projects, particularly my project building horse racing models where I plan on exploring other model building techniques. 
 
 Neural Network Predictions vs Actual
+
 ![Capture](https://github.com/shepard5/NFL/assets/108085853/42d88026-9660-43f2-b520-b42a072eff75)

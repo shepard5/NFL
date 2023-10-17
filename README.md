@@ -19,3 +19,6 @@ Introducing logistic regression model to predict over/under and moneyline outcom
 While linear regression may be good at estimating team outcomes and eliminating human bias, football is a very complex sport where several unexpected variables may alter a team's win totals over the course of 18 weeks (trades, injuries, rookie variability, etc). Delving deeper into the data and exploring the near-endless landscape of potentially predictable variables would surely reveal easter eggs, but mastering other modeling techniques and building a model on theory would serve better for the sport of football.
 
 I encourage you to take a look at my other projects, particularly my project building horse racing models where I plan on exploring other model building techniques. 
+
+Neural Network Predictions vs Actual
+![Capture](https://github.com/shepard5/NFL/assets/108085853/42d88026-9660-43f2-b520-b42a072eff75)

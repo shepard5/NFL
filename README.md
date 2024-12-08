@@ -1,5 +1,5 @@
 # Shepard5 NFL Model MAT 525 (Continued)
-The goal of this project is to sufficiently predict all NFL teams' season win totals with sufficient accuracy.
+The goal of this project is to sufficiently predict all NFL teams' season win totals with sufficient accuracy. I'm assuming it's not possible to find a model that produces statistically significant insights beyond the bounds of the typical ~10% buffer sportsbooks provide using player and team sport related statistics. Anywho, I'm curious to see how close I can get.
 
 As of 2021, sportsbooks' preseason lines have an MSE of 2.6 when compared to actual season results. The goal of this project is to produce an MSE that is confidently under the 2.6 benchmark for future seasons. 
 
